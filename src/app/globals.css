@@ -5,3 +5,15 @@
 body {
   @apply cursor-[url(/default.png)_4_4,pointer];
 }
+
+.grid-container {
+  @apply grid auto-rows-auto grid-cols-[repeat(12,1fr)];
+}
+
+.figure {
+  @apply transition-[400ms];
+}
+
+.grid-container:hover > .figure:not(:hover) {
+  @apply blur-[10px];
+}
