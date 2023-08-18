@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <nav
       style={navbarStyle}
-      className="w-full fixed top-0 p-5 bg-transparent z-50 flex justify-between items-center transition-all duration-[0.5s] ease-[ease-in-out] delay-[0s];"
+      className="w-full fixed top-0 py-5 px-10 bg-transparent z-50 flex justify-between items-center transition-all duration-[0.5s] ease-[ease-in-out] delay-[0s];"
     >
       <Image src="/dave-logo.png" alt="" width={80} height={40} />
       <Bars />

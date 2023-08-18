@@ -5,8 +5,8 @@ function Bars() {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
+      stroke="#252525"
+      className="w-9 h-9"
     >
       <path
         strokeLinecap="round"
