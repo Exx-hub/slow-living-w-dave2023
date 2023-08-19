@@ -1,7 +1,7 @@
-import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Nunito } from "next/font/google";
+import SubLayout from "./SubLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -15,8 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${nunito.className}`}>
-        <Navbar />
-        {children}
+        <SubLayout>{children}</SubLayout>
       </body>
     </html>
   );
