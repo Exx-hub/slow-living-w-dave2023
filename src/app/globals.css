@@ -17,3 +17,40 @@ body {
 .grid-container:hover > .figure:not(:hover) {
   @apply blur-[10px];
 }
+
+.burger {
+  @apply relative w-10 h-[25px] cursor-[url(/default.png)_4_4,pointer] block bg-transparent;
+}
+
+.burger input {
+  @apply hidden;
+}
+
+.burger span {
+  @apply block absolute h-1 w-full opacity-100 bg-[#005c29] rotate-0 duration-[500ms] ease-in-out rounded-[9px] left-0;
+}
+
+.burger span:nth-of-type(1) {
+  @apply origin-[left_center] top-0;
+}
+
+.burger span:nth-of-type(2) {
+  @apply -translate-y-2/4 origin-[left_center] top-2/4;
+}
+
+.burger span:nth-of-type(3) {
+  @apply origin-[left_center] -translate-y-full top-full;
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  @apply rotate-45 left-[5px] top-0;
+}
+.burger input:checked ~ span:nth-of-type(2) {
+  @apply w-[0%] opacity-0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
