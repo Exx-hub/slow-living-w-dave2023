@@ -7,8 +7,10 @@ import React from "react";
 function SubLayout({ children }: { children: React.ReactNode }) {
   return (
     <ContextProvider>
-      <Navbar />
-      {children}
+      <main>
+        <Navbar />
+        {children}
+      </main>
     </ContextProvider>
   );
 }
