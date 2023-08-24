@@ -1,10 +1,14 @@
 import Recipes from "@/components/Recipes";
-import React from "react";
+import { getAllBlogs } from "@/helpers/post-utils";
 
-function RecipesPage() {
+async function RecipesPage() {
+  const blogs = getAllBlogs();
+
+  console.log(blogs);
+
   return (
     <article className="h-screen max-w-6xl mx-auto pt-[91px] mt-10">
-      <Recipes />
+      <Recipes blogs={blogs} />
     </article>
   );
 }

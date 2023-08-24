@@ -1,15 +1,15 @@
 import React from "react";
 import RecipeCard from "./RecipeCard";
+import { Blog } from "@/interfaces";
 
-function Recipes() {
-  const recipes = [1, 2, 3, 4, 5, 6];
+function Recipes({ blogs }: { blogs: Blog[] }) {
   return (
     <div>
       <h2>MY RECIPES</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
-        {recipes.map((recipe) => (
-          <RecipeCard key={recipe} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+        {blogs.map((blog) => (
+          <RecipeCard key={blog.id} blog={blog} />
         ))}
       </div>
     </div>
