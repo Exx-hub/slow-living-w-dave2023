@@ -4,7 +4,7 @@ import { getAllBlogs } from "@/helpers/post-utils";
 async function RecipesPage() {
   const blogs = getAllBlogs();
 
-  console.log(blogs);
+  // console.log(blogs);
 
   return (
     <article className="h-screen max-w-6xl mx-auto pt-[91px] mt-10">

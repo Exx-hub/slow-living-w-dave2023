@@ -1,6 +1,7 @@
 import { convertDate } from "@/helpers/convertDate";
 import { Blog } from "@/interfaces";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function RecipeCard({ blog }: { blog: Blog }) {
@@ -10,18 +11,25 @@ function RecipeCard({ blog }: { blog: Blog }) {
   const readableDate = convertDate(date);
 
   return (
-    <section className="mb-2 mt-2">
-      {/* image  */}
-      <div className="w-[400px] overflow-hidden h-[266px]">
-        <Image src={imagePath} width={400} height={300} alt="" className="rounded-lg" />
-      </div>
-      <div className="flex justify-between items-center px-1 py-2">
-        {/* title */}
-        <h2 className="font-semibold text-xl">{title}</h2>
-        {/* date  */}
-        <p className="text-gray-500">{readableDate}</p>
-      </div>
-    </section>
+    <figure className="mb-2 mt-2">
+      <Link href={`/recipes/${slug}`}>
+        <div className="w-[400px] overflow-hidden h-[266px] rounded-lg">
+          <Image
+            src={imagePath}
+            width={400}
+            height={300}
+            alt={`photo of ${slug}`}
+            placeholder="blur"
+            blurDataURL={imagePath}
+          />
+        </div>
+
+        <figcaption className="flex justify-between items-center px-1 py-2">
+          <h2 className="font-semibold text-xl">{title}</h2>
+          <p className="text-gray-500">{readableDate}</p>
+        </figcaption>
+      </Link>
+    </figure>
   );
 }
 
