@@ -63,3 +63,20 @@ a {
 .navMenu {
   @apply absolute shadow-lg bg-logo bg-cover bg-center top-9 right-[85px] h-auto w-[177px] z-[99] transition-all duration-200 ease-in;
 }
+
+/* BLOG CONTENT css  */
+.recipeDetail h3 {
+  @apply text-3xl font-bold mt-8 text-[#2d8d5c];
+}
+
+.recipeDetail h4 {
+  @apply font-semibold my-3 text-black text-xl;
+}
+
+.recipeDetail ol li {
+  @apply list-decimal text-xl translate-x-5 mb-2;
+}
+
+.recipeDetail ul li {
+  @apply list-disc list-inside text-xl;
+}

@@ -4,8 +4,10 @@ export interface Blog {
   slug: string;
   subtitle: string;
   image: string;
+  contentImage: string;
   id: number;
   content: string;
+  cooked: boolean;
 }
 
 export type FixMeLater = any;

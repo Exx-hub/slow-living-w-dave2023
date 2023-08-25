@@ -7,7 +7,7 @@ async function RecipesPage() {
   // console.log(blogs);
 
   return (
-    <article className="h-screen max-w-6xl mx-auto pt-[91px] mt-10">
+    <article className="h-screen max-w-6xl mx-auto pt-[131px]">
       <Recipes blogs={blogs} />
     </article>
   );
