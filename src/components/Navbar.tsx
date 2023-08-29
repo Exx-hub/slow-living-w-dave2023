@@ -69,7 +69,7 @@ function Navbar() {
                 MERCH
               </Link>
             </div>
-            <div className=" px-4 hover:text-[#005c29]">
+            <div className="px-4 hover:text-[#005c29]">
               <Link href="https://www.facebook.com/profile.php?id=100095233815280" target="_blank">
                 SOCIAL MEDIA
               </Link>
