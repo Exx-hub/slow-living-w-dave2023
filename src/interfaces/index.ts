@@ -11,3 +11,10 @@ export interface Blog {
 }
 
 export type FixMeLater = any;
+
+export interface Reel {
+  image: string;
+  title: string;
+  link: string;
+  id: number;
+}

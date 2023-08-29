@@ -1,19 +1,24 @@
+"use client";
+
 import { convertDate } from "@/helpers/convertDate";
 import { Blog } from "@/interfaces";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { IMenuContext, MenuContext } from "@/context/MenuContext";
+import { useContext } from "react";
 
 function RecipeCard({ blog }: { blog: Blog }) {
+  const { menuOpen } = useContext(MenuContext) as IMenuContext;
+
   const { title, date, image, slug } = blog;
 
   const imagePath = `/blogImages/${slug}/${image}`;
   const readableDate = convertDate(date);
 
   return (
-    <figure className="mb-2 mt-2">
+    <figure className={`mb-2 mt-2 ${menuOpen && "blurred"}`}>
       <Link href={`/recipes/${slug}`}>
-        <div className="w-[400px] overflow-hidden h-[266px] rounded-lg">
+        <div className="w-[400px] overflow-hidden h-[266px] rounded-lg shadow-lg">
           <Image
             src={imagePath}
             width={400}

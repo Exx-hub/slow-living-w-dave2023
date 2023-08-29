@@ -77,7 +77,7 @@ async function RecipeDetail(context: IContext) {
       </section>
 
       <section className="mb-10">
-        <Image src={imagePath} alt="" width={450} height={350} className="mx-auto" />
+        <Image src={imagePath} alt="" width={450} height={350} className="mx-auto shadow-lg" />
         <div className="flex items-center justify-center mt-2 text-base space-x-3">
           <div className="flex items-center space-x-1">
             <RiTimeLine />

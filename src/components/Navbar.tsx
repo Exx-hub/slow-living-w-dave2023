@@ -37,7 +37,9 @@ function Navbar() {
         style={navbarStyle}
         className="w-full fixed top-0 py-5 px-10 bg-transparent z-50 flex justify-between items-center transition-all duration-[0.5s] ease-[ease-in-out] delay-[0s];"
       >
-        <Image src="/dave-logo.png" alt="" width={80} height={40} style={{ width: "auto" }} />
+        <Link href="/">
+          <Image src="/dave-logo.png" alt="" width={80} height={40} style={{ width: "auto" }} />
+        </Link>
         <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
         <div className={menuOpen ? "navMenu opacity-100 " : "navMenu opacity-0"}>
@@ -49,6 +51,12 @@ function Navbar() {
               className="border-b border-gray-300 px-4 pb-2 hover:text-[#005c29]"
             >
               <Link href="/recipes">RECIPES</Link>
+            </div>
+            <div
+              onClick={() => setMenuOpen(false)}
+              className="border-b border-gray-300 px-4 pb-2 hover:text-[#005c29]"
+            >
+              <Link href="/reels">REELS</Link>
             </div>
             <div
               onClick={() => setMenuOpen(false)}
