@@ -8,7 +8,7 @@ a {
 }
 
 .grid-container {
-  @apply grid auto-rows-auto grid-cols-[repeat(12,1fr)];
+  @apply flex flex-col md:grid md:auto-rows-auto md:grid-cols-[repeat(12,1fr)];
 }
 
 .figure {
@@ -24,7 +24,7 @@ a {
 }
 
 .burger {
-  @apply relative w-10 h-[25px] cursor-[url(/default.png)_4_4,pointer] block bg-transparent;
+  @apply relative w-7 md:w-10 h-[25px] cursor-[url(/default.png)_4_4,pointer] block bg-transparent;
 }
 
 .burger input {
@@ -61,7 +61,7 @@ a {
 }
 
 .navMenu {
-  @apply absolute shadow-lg bg-logo bg-cover bg-center top-9 right-[85px] h-auto w-[177px] z-[99] transition-all duration-200 ease-in;
+  @apply absolute shadow-lg bg-logo bg-cover bg-center top-9 right-[45px] md:right-[85px] h-auto w-[177px] z-[99] transition-all duration-200 ease-in;
 }
 
 /* BLOG CONTENT css  */

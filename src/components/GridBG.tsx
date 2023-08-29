@@ -42,7 +42,7 @@ function GridBG() {
         <Image src="/grid-images/aeropress.jpg" alt="" width={500} height={300} />
       </figure>
 
-      <aside className="col-[5/span_4] row-[3] text-center text-2xl font-thin">
+      <aside className="col-[5/span_4] row-[3] text-center text-xl md:text-2xl font-thin">
         <p>
           {`
         Slow living [sləʊ ˈlɪvɪŋ] (noun) is a lifestyle that focuses on a slower, calmer, more thoughtful approach to all
@@ -68,7 +68,7 @@ function GridBG() {
       </figure>
 
       {/* then another definition  */}
-      <aside className="col-[5/span_4] row-[6] text-center text-2xl font-thin  mt-[100px]">
+      <aside className="col-[5/span_4] row-[6] text-center text-xl md:text-2xl font-thin  mt-[100px]">
         <blockquote>
           &quot;Learn to give yourself time for exercising, eating good food, playing games,
           breathing fresh air... truly living and enjoying life.&quot;

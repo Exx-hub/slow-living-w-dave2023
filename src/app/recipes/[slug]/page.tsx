@@ -70,13 +70,13 @@ async function RecipeDetail(context: IContext) {
   };
 
   return (
-    <article className="h-screen max-w-4xl mx-auto pt-[131px] mb-8 recipeDetail">
+    <article className="h-screen max-w-4xl mx-auto pt-[80px] md:pt-[131px] mb-8 recipeDetail">
       <section className="text-center mb-4 p-2">
         <h1 className="text-5xl text-[#2d8d5c] font-semibold mb-2">{title}</h1>
         <p className="text-gray-500 italic text-sm">{readableDate}</p>
       </section>
 
-      <section className="mb-10">
+      <section className="mb-10 px-2">
         <Image src={imagePath} alt="" width={450} height={350} className="mx-auto shadow-lg" />
         <div className="flex items-center justify-center mt-2 text-base space-x-3">
           <div className="flex items-center space-x-1">

@@ -35,9 +35,9 @@ function Navbar() {
     <header className="relative">
       <div
         style={navbarStyle}
-        className="w-full fixed top-0 py-5 px-10 bg-transparent z-50 flex justify-between items-center transition-all duration-[0.5s] ease-[ease-in-out] delay-[0s];"
+        className="w-full fixed top-0 py-3 md:py-5 px-3 md:px-10 bg-transparent z-50 flex justify-between items-center transition-all duration-[0.5s] ease-[ease-in-out] delay-[0s];"
       >
-        <Link href="/">
+        <Link href="/" className="w-[80px] md:w-auto">
           <Image src="/dave-logo.png" alt="" width={80} height={40} style={{ width: "auto" }} />
         </Link>
         <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

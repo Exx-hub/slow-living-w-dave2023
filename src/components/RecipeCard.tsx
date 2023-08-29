@@ -18,7 +18,7 @@ function RecipeCard({ blog }: { blog: Blog }) {
   return (
     <figure className={`mb-2 mt-2 ${menuOpen && "blurred"}`}>
       <Link href={`/recipes/${slug}`}>
-        <div className="w-[400px] overflow-hidden h-[266px] rounded-lg shadow-lg">
+        <div className="w-[320px] h-[200px] md:w-[400px] overflow-hidden md:h-[266px] rounded-lg shadow-lg">
           <Image
             src={imagePath}
             width={400}
